@@ -1,3 +1,3 @@
-import ColorPickerCustom from "./ColorPickerCustomTest";
+import ColorPickerCustom from "./ColorPickerCustom";
 
 export default ColorPickerCustom;
