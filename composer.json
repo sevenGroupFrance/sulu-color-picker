@@ -1,0 +1,29 @@
+{
+    "name": "sevengroupfrance/sulu-color-picker",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tenreiro Benjamin",
+            "email": "tenreiro.benjamin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sevenGroupFrance\\suluColorPicker\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tommysonsylverstone/composer-test/"
+        },
+        {
+            "type": "path",
+            "url": "../../../assets/admin/node_modules",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
