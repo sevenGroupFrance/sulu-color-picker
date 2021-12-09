@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tommysonsylverstone/composer-test/"
+            "url": "https://github.com/sevenGroupFrance/sulu-color-picker/"
         },
         {
             "type": "path",
