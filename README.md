@@ -9,20 +9,20 @@ This bundle will make a color picker with a few colors only. This is handy if yo
 ![How the color picker looks in sulu's admin](img/cp-1.png)
 
 ## Installation
-1. Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-color-picker-bundle) in your project with the following command line: 
+1. Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-color-picker-bundle) in your project with the following command line:\
 `composer require sevengroupfrance/sulu-color-picker-bundle`.
-2. In `config/bundles.php` add the following code: 
+2. In `config/bundles.php` add the following code:\
 `sevenGroupFrance\suluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.
 
 ![bundles.php file with additional line](img/cp-2.png)
 
-3. In `assets/admin/package.json`, add the following line in the "dependencies" object: 
+3. In `assets/admin/package.json`, add the following line in the "dependencies" object:\
 `"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-color-picker-bundle/src/Resources/js"`.
 
 ![package.json file with additional line](img/cp-3.png)
 
 4. In `assets/admin`, `npm install` to initialize the bundle's symlink directory.
-5. In `assets/admin/index.js`, add this line:
+5. In `assets/admin/index.js`, add this line:\
 `import 'sulu-color-picker-bundle'`.
 
 ![index.js file with additional line](img/cp-4.png)
@@ -31,7 +31,7 @@ This bundle will make a color picker with a few colors only. This is handy if yo
 
 ## dotenv configuration
 This bundle uses the .env constants as well as the npm package [dotenv](https://www.npmjs.com/package/dotenv). Install the package in your `assets/admin/node_modules` directory.
-Once this is done, add those lines in your `assets/admin/webpack.config.js` file:
+Once this is done, add those lines in your `assets/admin/webpack.config.js` file:\
 At the start of your file:
 ```
 require('dotenv').config({ path: './../../.env' });
@@ -58,3 +58,6 @@ Open your .env file in your root directory, and add a constant of your choice:
 Then, give it a string for its value, with the colors you want:
 
 ![your .env constant](img/cp-8.png)
+
+The colors can be hexadecimals, rgb or color name (pretty much everything that works on CSS).\
+Finally, once you've saved your .env file, do a new `npm run watch` or `npm run build` to initialize the colors you've saved.
