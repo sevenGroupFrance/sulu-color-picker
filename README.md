@@ -9,7 +9,7 @@ This bundle will make a color picker with a few colors only. This is handy if yo
 ![How the color picker looks in sulu's admin](img/cp-1.png)
 
 ## Installation
-Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-color-picker-bundle) in your project with the following command line: 
+1. Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-color-picker-bundle) in your project with the following command line: 
 `composer require sevengroupfrance/sulu-color-picker-bundle`.
 2. In `config/bundles.php` add the following code: 
 `sevenGroupFrance\suluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.\
