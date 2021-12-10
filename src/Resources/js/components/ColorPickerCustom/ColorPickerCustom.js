@@ -6,6 +6,7 @@ class ColorPickerCustom extends React.PureComponent {
     super();
     this.state = { value: '#FFFFFF' };
     this.handleChange = this.handleChange.bind(this);
+    this.colorlist = process.env.COLOR_PICKER_COLORS.split(' ');
   }
 
   handleChange(value) {
@@ -17,25 +18,25 @@ class ColorPickerCustom extends React.PureComponent {
   componentDidMount() {
     const radiogroup = document.getElementsByClassName("color-picker-radiogroup");
     const radioArray = [];
-    const colors = ["#F18C1C", "#3C3C3B", "#FFFFFF"];
     for (let i = 0; i < radiogroup.length; i++) {
       let label = radiogroup[i].children;
       radioArray.push(label);
       radiogroup[i].parentElement.parentElement.parentElement.classList.add("radio-container")
       for (let j = 0; j < radioArray[i].length; j++) {
-        radioArray[i][j].children[0].style.backgroundColor = colors[j]
+        radioArray[i][j].children[0].style.backgroundColor = this.colorlist[j]
       }
     }
   }
 
   render() {
     const { value: value } = this.props;
-
+    const colorlist = []
+    for(let i = 0; i < this.colorlist.length; i++) {
+      colorlist.push(<Radio value={this.colorlist[i]} key={i}></Radio>)
+    }
     return (
       <RadioGroup value={value} onChange={this.handleChange} className="color-picker-radiogroup">
-        <Radio value="#F18C1C"></Radio>
-        <Radio value="#3C3C3B"></Radio>
-        <Radio value="#FFFFFF"></Radio>
+        {colorlist}
       </RadioGroup>
     )
   }
