@@ -4,7 +4,7 @@ Inspired by [this pull request](https://github.com/sulu/sulu-demo/pull/66).
 
 ## What is this bundle's goal?
 Importing a custom fonctionality into [sulu](https://github.com/sulu/sulu), in this example, a custom content type.
-This bundle will make a color picker with a few colors only. This is handy if you don't want to select a color via the normal color picker sulu has.&nbsp;
+This bundle will make a color picker with a few colors only. This is handy if you don't want to select a color via the normal color picker sulu has.
 
 ![How the color picker looks in sulu's admin](img/cp-1.png)
 
@@ -12,7 +12,7 @@ This bundle will make a color picker with a few colors only. This is handy if yo
 Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-color-picker-bundle) in your project with the following command line: 
 `composer require sevengroupfrance/sulu-color-picker-bundle`.
 2. In `config/bundles.php` add the following code: 
-`sevenGroupFrance\suluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.
+`sevenGroupFrance\suluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.\
 ![bundles.php file with additional line](img/cp-2.png)
 3. In `assets/admin/package.json`, add the following line in the "dependencies" object: 
 `"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-color-picker-bundle/src/Resources/js"`.
