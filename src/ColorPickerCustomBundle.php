@@ -1,6 +1,6 @@
 <?php
 
-namespace sevenGroupFrance\suluColorPicker;
+namespace sevenGroupFrance\suluColorPickerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
