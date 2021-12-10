@@ -38,6 +38,7 @@ require('dotenv').config({ path: './../../.env' });
 const webpack = require('webpack');
 ```
 ![webpack.config.js file with additionals lines](img/cp-5.png)
+
 In the module.export object:
 ```
 config.plugins.push(new webpack.DefinePlugin({
@@ -45,11 +46,15 @@ config.plugins.push(new webpack.DefinePlugin({
   }))
 ```
 ![webpack.config.js file with additionals lines](img/cp-6.png)
+
 This will add a new parameters to SULU's webpack.config.js' plugins object and enable your env variables in your js files.
 
 ## colors configuration
 This part is quite simple.
 Open your .env file in your root directory, and add a constant of your choice:
+
 ![your .env constant](img/cp-7.png)
+
 Then, give it a string for its value, with the colors you want:
+
 ![your .env constant](img/cp-8.png)
