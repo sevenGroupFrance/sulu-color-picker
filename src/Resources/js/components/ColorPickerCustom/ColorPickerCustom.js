@@ -6,7 +6,11 @@ class ColorPickerCustom extends React.PureComponent {
     super();
     this.state = { value: '#FFFFFF' };
     this.handleChange = this.handleChange.bind(this);
-    this.colorlist = process.env.COLOR_PICKER_COLORS.split(' ');
+    if (process.env.COLOR_PICKER_COLORS) {
+      this.colorlist = process.env.COLOR_PICKER_COLORS.split(' ');
+    } else {
+      this.colorlist = [];
+    }
   }
 
   handleChange(value) {
