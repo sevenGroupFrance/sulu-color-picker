@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "sevenGroupFrance\\suluColorPicker\\": "src"
+            "sevenGroupFrance\\suluColorPickerBundle\\": "src"
         }
     },
     "repositories": [
