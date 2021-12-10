@@ -3,7 +3,7 @@
 Inspired by [this pull request](https://github.com/sulu/sulu-demo/pull/66).
 
 ## What is this bundle's goal?
-Importing a custom fonctionality, in this example, a custom content type.
+Importing a custom fonctionality into [sulu](https://github.com/sulu/sulu), in this example, a custom content type.
 
 ## Installation
 1. Download the package in your project with the following command line: 
