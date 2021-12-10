@@ -61,3 +61,8 @@ Then, give it a string for its value, with the colors you want:
 
 The colors can be hexadecimals, rgb or color name (pretty much everything that works on CSS).\
 Finally, once you've saved your .env file, do a new `npm run watch` or `npm run build` to initialize the colors you've saved.
+
+## Use in your template files
+Once installed, to use this new content type, you'll have to create a new property with the type `color_picker_custom`.
+
+![How to use the new content type](img/cp-9.png)
