@@ -1,6 +1,6 @@
 <?php
 
-namespace sevenGroupFrance\suluColorPicker\Content\Types;
+namespace sevenGroupFrance\suluColorPickerBundle\Content\Types;
 
 use Sulu\Component\Content\SimpleContentType;
 
