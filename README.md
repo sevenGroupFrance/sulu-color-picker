@@ -13,14 +13,20 @@ Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-colo
 `composer require sevengroupfrance/sulu-color-picker-bundle`.
 2. In `config/bundles.php` add the following code: 
 `sevenGroupFrance\suluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.\
+
 ![bundles.php file with additional line](img/cp-2.png)
+
 3. In `assets/admin/package.json`, add the following line in the "dependencies" object: 
-`"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-color-picker-bundle/src/Resources/js"`.
+`"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-color-picker-bundle/src/Resources/js"`.\
+
 ![package.json file with additional line](img/cp-3.png)
+
 4. In `assets/admin`, `npm install` to initialize the bundle's symlink directory.
 5. In `assets/admin/index.js`, add this line:
-`import 'sulu-color-picker-bundle'`.
+`import 'sulu-color-picker-bundle'`.\
+
 ![index.js file with additional line](img/cp-4.png)
+
 6. In `assets/admin`, `npm run watch` or `npm run build`
 
 ## dotenv configuration
