@@ -4,8 +4,7 @@ Inspired by [this pull request](https://github.com/sulu/sulu-demo/pull/66).
 
 ## What is this bundle's goal?
 Importing a custom fonctionality into [sulu](https://github.com/sulu/sulu), in this example, a custom content type.
-This bundle will make a color picker with a few colors only. This is handy if you don't want to select a color via the normal color picker sulu has.
-
+This bundle will make a color picker with a few colors only. This is handy if you don't want to select a color via the normal color picker sulu has.  
 ![How the color picker looks in sulu's admin](img/cp-1.png)
 
 ## Installation
