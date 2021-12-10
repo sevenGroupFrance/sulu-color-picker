@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/sevenGroupFrance/sulu-color-picker/"
+            "url": "https://github.com/sevenGroupFrance/sulu-color-picker-bundle/"
         },
         {
             "type": "path",
