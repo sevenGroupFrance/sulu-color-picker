@@ -13,20 +13,11 @@ This bundle will make a color picker with a few colors only. This is handy if yo
 `composer require sevengroupfrance/sulu-color-picker-bundle`.
 2. In `config/bundles.php` add the following code:\
 `SevenGroupFrance\SuluColorPickerBundle\ColorPickerCustomBundle::class => ['all' => true]`.
-
-![bundles.php file with additional line](img/cp-2.png)
-
 3. In `assets/admin/package.json`, add the following line in the "dependencies" object:\
 `"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-color-picker-bundle/src/Resources/js"`.
-
-![package.json file with additional line](img/cp-3.png)
-
 4. In `assets/admin`, `npm install` to initialize the bundle's symlink directory.
 5. In `assets/admin/index.js`, add this line:\
 `import 'sulu-color-picker-bundle'`.
-
-![index.js file with additional line](img/cp-4.png)
-
 6. In `assets/admin`, `npm run watch` or `npm run build`
 
 ## dotenv configuration
@@ -37,7 +28,6 @@ At the start of your file:
 require('dotenv').config({ path: './../../.env' });
 const webpack = require('webpack');
 ```
-![webpack.config.js file with additionals lines](img/cp-5.png)
 
 In the module.export object:
 ```
@@ -45,19 +35,15 @@ config.plugins.push(new webpack.DefinePlugin({
     "process.env": JSON.stringify(process.env)
   }))
 ```
-![webpack.config.js file with additionals lines](img/cp-6.png)
 
 This will add a new parameters to SULU's webpack.config.js' plugins object and enable your env variables in your js files.
 
 ## colors configuration
 This part is quite simple.
-Open your .env file in your root directory, and add a constant of your choice:
+Open your .env file in your root directory, and add the constant `COLOR_PICKER_COLORS`.
 
-![your .env constant](img/cp-7.png)
-
-Then, give it a string for its value, with the colors you want:
-
-![your .env constant](img/cp-8.png)
+Then, give it a string for its value, with the colors you want:\
+`COLOR_PICKER_COLORS="#F18C1C #3C3C3B #FFFFFF"`
 
 The colors can be hexadecimals, rgb or color name (pretty much everything that works on CSS).\
 Finally, once you've saved your .env file, do a new `npm run watch` or `npm run build` to initialize the colors you've saved.
