@@ -33,7 +33,7 @@ In the module.export object:
 ```
 config.plugins.push(new webpack.DefinePlugin({
     "process.env": JSON.stringify(process.env)
-  }))
+}))
 ```
 
 This will add a new parameters to SULU's webpack.config.js' plugins object and enable your env variables in your js files.
@@ -45,10 +45,16 @@ Open your .env file in your root directory, and add the constant `COLOR_PICKER_C
 Then, give it a string for its value, with the colors you want:\
 `COLOR_PICKER_COLORS="#F18C1C #3C3C3B #FFFFFF"`
 
-The colors can be hexadecimals, rgb or color name (pretty much everything that works on CSS).\
-Finally, once you've saved your .env file, do a new `npm run watch` or `npm run build` to initialize the colors you've saved.
+The colors can be hexadecimals, rgb or color name (pretty much everything that works on CSS) and have to be separated by a single space gap.\
+Finally, once you've saved your .env file, do a new `npm run watch` or `npm run build` in your `assets/admin` directory to initialize the colors you've saved.
 
 ## Use in your template files
 Once installed, to use this new content type, you'll have to create a new property with the type `color_picker_custom`.
 
-![How to use the new content type](img/cp-9.png)
+```
+<property name="title_color" type="color_picker_custom">
+    <meta>
+        <title lang="en">Page's title - 80 characters max</title>
+    </meta>
+</property>
+```
